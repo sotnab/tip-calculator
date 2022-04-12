@@ -40,7 +40,7 @@ body {
       'tip tip'
       'people people'
       'results results';
-   max-width: 850px;
+   max-width: 860px;
    background: $white;
    align-self: stretch;
    border-radius: 18px;
@@ -50,6 +50,7 @@ body {
    @media (min-width: $breakpoint) {
       margin: 20px;
       margin-bottom: 100px;
+      padding: 30px;
       column-gap: 40px;
       align-self: auto;
       grid-template-areas:
@@ -129,6 +130,7 @@ body {
    font-size: 1.5rem;
    font-weight: 700;
    text-align: center;
+   cursor: pointer;
 }
 
 .calc_radio:checked + .calc_item {

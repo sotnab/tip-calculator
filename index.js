@@ -7,13 +7,13 @@ const tipPerPerson = document.getElementById('tip-per-person')
 const totalPerPerson = document.getElementById('total-per-person')
 
 const calcTip = () => {
-   if (bill.value <= 0 || people.value <= 0) return
+   if (bill.value <= 0 || people.value <= 0 || isNaN(bill.value) || isNaN(people.value)) return
 
    const billValue = parseFloat(bill.value)
    const peopleCount = parseInt(people.value)
    let tipValue;
 
-   if (custom.value != '') {
+   if (custom.value != '' || !isNaN(custom.value)) {
       tipValue = parseFloat(custom.value)
    } else {
       const checked = document.querySelector('input[name="tip-value"]:checked')
