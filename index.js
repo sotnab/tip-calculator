@@ -53,4 +53,6 @@ resetButton.addEventListener('click', () => {
    bill.value = ''
    people.value = ''
    custom.value = ''
+   tipPerPerson.textContent = '0.00'
+   totalPerPerson.textContent = '0.00'
 })
