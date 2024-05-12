@@ -1,7 +1,8 @@
 const bill = document.getElementById('full-price')
 const people = document.getElementById('number-of-people')
 const custom = document.getElementById('custom-tip')
-const tipButtons = document.querySelectorAll('.calc_radio')
+const resetButton = document.getElementById('reset')
+const tipButtons = document.querySelectorAll('.calc__radio')
 
 const tipPerPerson = document.getElementById('tip-per-person')
 const totalPerPerson = document.getElementById('total-per-person')
@@ -11,10 +12,11 @@ const calcTip = () => {
 
    const billValue = parseFloat(bill.value)
    const peopleCount = parseInt(people.value)
-   let tipValue;
+   let tipValue
 
-   if (custom.value != '' || !isNaN(custom.value)) {
-      tipValue = parseFloat(custom.value)
+
+   if (custom.value && !isNaN(custom.value)) {
+      tipValue = parseFloat(custom.value) / 100
    } else {
       const checked = document.querySelector('input[name="tip-value"]:checked')
       if (!checked) return
@@ -40,8 +42,15 @@ custom.addEventListener('focus', () => {
    tipButtons.forEach(item => item.checked = false)
 })
 
-
 tipButtons.forEach((item) => {
-   item.addEventListener('change', calcTip)
+   item.addEventListener('change', () => {
+      custom.value = ''
+      calcTip()
+   })
 })
 
+resetButton.addEventListener('click', () => {
+   bill.value = ''
+   people.value = ''
+   custom.value = ''
+})

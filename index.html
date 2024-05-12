@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Splitter</title>
 </head>
 
 <body>
@@ -18,61 +18,61 @@
         <h1 class="title">Spli<br>tter</h1>
 
         <section class="calc">
-            <div class="calc_bill">
-                <h2 class="calc_title">Bill</h2>
-                <div class="calc_control">
-                    <input type="text" placeholder="0" id="full-price" class="calc_input" />
-                    <img src="./images/icon-dollar.svg" alt="dollar icon" class="calc_icon" />
+            <div class="calc__bill">
+                <h2 class="calc__title">Bill</h2>
+                <div class="calc__control">
+                    <input type="text" placeholder="0" id="full-price" class="calc__input" />
+                    <img src="./images/icon-dollar.svg" alt="dollar icon" class="calc__icon" />
                 </div>
             </div>
 
-            <div class="calc_tip-select">
-                <h2 class="calc_title">Select Tip %</h2>
-                <div class="calc_tips">
-                    <input type="radio" name="tip-value" id="tip1" value="0.05" class="calc_radio">
-                    <label class="calc_item" for="tip1">5%</label>
-                    <input type="radio" name="tip-value" id="tip2" value="0.1" class="calc_radio">
-                    <label class="calc_item" for="tip2">10%</label>
-                    <input type="radio" name="tip-value" id="tip3" value="0.15" class="calc_radio">
-                    <label class="calc_item" for="tip3">15%</label>
-                    <input type="radio" name="tip-value" id="tip4" value="0.25" class="calc_radio">
-                    <label class="calc_item" for="tip4">25%</label>
-                    <input type="radio" name="tip-value" id="tip5" value="0.5" class="calc_radio">
-                    <label class="calc_item" for="tip5">50%</label>
-                    <input type="text" name="tip-value" id="custom-tip" placeholder="Custom" class="calc_tip-control">
+            <div class="calc__tip-select">
+                <h2 class="calc__title">Select Tip %</h2>
+                <div class="calc__tips">
+                    <input type="radio" name="tip-value" id="tip1" value="0.05" class="calc__radio">
+                    <label class="calc__item" for="tip1">5%</label>
+                    <input type="radio" name="tip-value" id="tip2" value="0.1" class="calc__radio">
+                    <label class="calc__item" for="tip2">10%</label>
+                    <input type="radio" name="tip-value" id="tip3" value="0.15" class="calc__radio">
+                    <label class="calc__item" for="tip3">15%</label>
+                    <input type="radio" name="tip-value" id="tip4" value="0.25" class="calc__radio">
+                    <label class="calc__item" for="tip4">25%</label>
+                    <input type="radio" name="tip-value" id="tip5" value="0.5" class="calc__radio">
+                    <label class="calc__item" for="tip5">50%</label>
+                    <input type="text" name="tip-value" id="custom-tip" placeholder="Custom" class="calc__tip-control">
                 </div>
             </div>
 
-            <div class="calc_people">
-                <h2 class="calc_title">Number of People</h2>
-                <div class="calc_control">
-                    <input type="text" placeholder="0" id="number-of-people" class="calc_input" />
-                    <img src="./images/icon-person.svg" alt="dollar icon" class="calc_icon" />
+            <div class="calc__people">
+                <h2 class="calc__title">Number of People</h2>
+                <div class="calc__control">
+                    <input type="text" placeholder="0" id="number-of-people" class="calc__input" />
+                    <img src="./images/icon-person.svg" alt="dollar icon" class="calc__icon" />
                 </div>
             </div>
 
-            <div class="calc_result">
-                <div class="calc_amount">
-                    <div class="calc_per-person">
-                        <strong class="calc_strong">Tip Amount</strong>
-                        <small class="calc_small">/ person</small>
+            <div class="calc__result">
+                <div class="calc__amount">
+                    <div class="calc__per-person">
+                        <strong class="calc__strong">Tip Amount</strong>
+                        <small class="calc__small">/ person</small>
                     </div>
-                    <strong class="calc_total" id="tip-per-person">
+                    <strong class="calc__total" id="tip-per-person">
                         0.00
                     </strong>
                 </div>
 
-                <div class="calc_amount">
-                    <div class="calc_per-person">
-                        <strong class="calc_strong">Total</strong>
-                        <small class="calc_small">/ person</small>
+                <div class="calc__amount">
+                    <div class="calc__per-person">
+                        <strong class="calc__strong">Total</strong>
+                        <small class="calc__small">/ person</small>
                     </div>
-                    <strong class="calc_total" id="total-per-person">
+                    <strong class="calc__total" id="total-per-person">
                         0.00
                     </strong>
                 </div>
 
-                <button class="calc_btn">Reset</button>
+                <button class="calc__btn" id="reset">Reset</button>
             </div>
         </section>
     </div>

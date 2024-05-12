@@ -61,11 +61,11 @@ body {
    }
 }
 
-.calc_bill {
+.calc__bill {
    grid-area: bill;
 }
 
-.calc_title {
+.calc__title {
    color: $grayish-cyan1;
    font-size: 0.9rem;
    margin: 4px 0;
@@ -75,11 +75,11 @@ body {
    }
 }
 
-.calc_control {
+.calc__control {
    position: relative;
 }
 
-.calc_input {
+.calc__input {
    display: block;
    width: 100%;
    padding: 5px 15px 5px 35px;
@@ -104,18 +104,18 @@ body {
    }
 }
 
-.calc_icon {
+.calc__icon {
    position: absolute;
    left: 15px;
    top: 50%;
    transform: translateY(-50%);
 }
 
-.calc_tip-select {
+.calc__tip-select {
    grid-area: tip;
 }
 
-.calc_tips {
+.calc__tips {
    display: grid;
    grid-template-columns: 1fr 1fr;
    gap: 12px;
@@ -126,7 +126,7 @@ body {
    }
 }
 
-.calc_item {
+.calc__item {
    background: $dark-cyan;
    color: $light-cyan2;
    border-radius: 5px;
@@ -137,12 +137,12 @@ body {
    cursor: pointer;
 }
 
-.calc_radio:checked + .calc_item {
+.calc__radio:checked + .calc__item {
    background: $strong-cyan;
    color: $dark-cyan;
 }
 
-.calc_tip-control {
+.calc__tip-control {
    width: 100%;
    border-radius: 5px;
    padding: 6px 12px;
@@ -159,12 +159,12 @@ body {
    }
 }
 
-.calc_people {
+.calc__people {
    grid-area: people;
    margin-bottom: 10px;
 }
 
-.calc_result {
+.calc__result {
    grid-area: results;
    display: flex;
    flex-direction: column;
@@ -179,7 +179,7 @@ body {
    }
 }
 
-.calc_btn {
+.calc__btn {
    background: $strong-cyan;
    width: 100%;
    border: none;
@@ -201,12 +201,12 @@ body {
    }
 }
 
-.calc_amount {
+.calc__amount {
    display: flex;
    justify-content: space-between;
 }
 
-.calc_total {
+.calc__total {
    color: $strong-cyan;
    font-size: 1.8rem;
 
@@ -220,21 +220,21 @@ body {
    }
 }
 
-.calc_per-person {
+.calc__per-person {
    display: flex;
    flex-direction: column;
 }
 
-.calc_strong {
+.calc__strong {
    color: $light-cyan1;
    font-size: 0.95rem;
 }
 
-.calc_small {
+.calc__small {
    color: $grayish-cyan2;
    font-weight: bold;
 }
 
-.calc_radio {
+.calc__radio {
    display: none;
 }
